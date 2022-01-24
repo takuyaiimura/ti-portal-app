@@ -1,0 +1,24 @@
+.screenshots {
+  max-width: 500px !important;
+  height: auto!;
+}
+
+.howtoModal {
+  font-family: "ABCWhyte Book", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu",
+    "Cantarell", "Helvetica Neue", sans-serif !important;
+}
+
+/* Hide the scrollbar byu still allow scroll : Chrome, Safari and Opera */
+.howtoModal::-webkit-scrollbar {
+  display: none;
+}
+/* Hide the scrollbar byu still allow scroll :  IE, Edge and Firefox */
+.howtoModal {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.lblBullet{
+  font-weight: 600!important;
+  color: #00297A!important;
+}

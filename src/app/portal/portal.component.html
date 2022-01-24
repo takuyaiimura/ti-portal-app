@@ -1,0 +1,54 @@
+<div class="loggedinUser">
+  <h1>{{strWelcome}} <br />{{UserLoggedIn}} さん</h1>
+  
+</div>
+
+<div class="fxcontainer" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="30px">
+
+  <div class="AppContainer" fxLayout="row wrap" fxLayoutAlign="center center">
+    <a class="staticBoxLabel">現在の所属グループ</a>
+    <div *ngFor="let itemGroup of AppsFromGroup">
+      <a class="myGroups">{{ itemGroup.groupname }}</a>
+
+    </div>
+    
+    <a class="btn btn-reg-danger btn-round" class="btn btn-danger btn-round btnHowto" (click)="OpenHowto()">How to Use this App</a>
+  </div>
+
+  <div class="AppContainer" fxLayout="row wrap" fxLayoutAlign="center center"
+    *ngFor="let itemPortalApp of AppsFromGroup">
+    <div class="imgContainer">
+      <img src="{{ itemPortalApp.img }}" class="imgSize">
+    </div>
+    <div class="AppInfoContainer">
+      <div>
+        <div class="AppItemInfo" fxLayout="columns" fxLayoutGap="10px">
+        </div>
+        <div>
+          <a class="AppName">{{ itemPortalApp.name }}</a>
+        </div>
+        <div class="GoButton"> <a href="{{ itemPortalApp.url }}" class="btn btn-danger btn-round"
+            class="btn btn-danger btn-round" target="_blank"><i class="nc-icon nc-book-bookmark"></i>Go to App</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="AppContainer" fxLayout="row wrap" fxLayoutAlign="center center">
+    <a class="staticBoxLabel">現在の所属グループ</a>
+    
+
+    
+  </div>
+
+  <div class="AppContainer" fxLayout="row wrap" fxLayoutAlign="center center">
+    <a class="staticBoxLabel">現在の所属グループ</a>
+    
+  </div> -->
+
+
+</div>
+
+
+<p class="okta-white-logo">
+  <img src="assets/img/Logo_Okta_Japan_White.png">
+</p>
